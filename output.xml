@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210128 16:22:16.717" rpa="false">
+<suite id="s1" name="Mobiletesting" source="C:\Users\CTEA\eclipse-workspace4\Mobiletesting">
+<suite id="s1-s1" name="Mobiletesting Suite" source="C:\Users\CTEA\eclipse-workspace4\Mobiletesting\mobiletesting_suite">
+<suite id="s1-s1-s1" name="Mobiletestinglogin" source="C:\Users\CTEA\eclipse-workspace4\Mobiletesting\mobiletesting_suite\mobiletestinglogin.robot">
+<test id="s1-s1-s1-t1" name="TC1_VerifyApp">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=redmi</arg>
+<arg>app=C:\\Users\\CTEA\\eclipse-workspace4\\Mobiletesting\\app\\Amazon Shopping Search Find Ship and Save_v22.1.0.100_apkpure.com.apk</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210128 16:22:39.533" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20210128 16:22:39.529" endtime="20210128 16:22:39.534"></status>
+</kw>
+<msg timestamp="20210128 16:22:39.535" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20210128 16:22:39.538" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20273ms.
+</msg>
+<status status="FAIL" starttime="20210128 16:22:17.052" endtime="20210128 16:22:39.539"></status>
+</kw>
+<status status="FAIL" starttime="20210128 16:22:17.051" endtime="20210128 16:22:39.539" critical="yes">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20273ms.
+</status>
+</test>
+<status status="FAIL" starttime="20210128 16:22:16.806" endtime="20210128 16:22:39.540"></status>
+</suite>
+<status status="FAIL" starttime="20210128 16:22:16.801" endtime="20210128 16:22:39.543"></status>
+</suite>
+<status status="FAIL" starttime="20210128 16:22:16.769" endtime="20210128 16:22:39.546"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Mobiletesting">Mobiletesting</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Mobiletesting Suite">Mobiletesting.Mobiletesting Suite</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Mobiletestinglogin">Mobiletesting.Mobiletesting Suite.Mobiletestinglogin</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210128 16:22:39.535" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
